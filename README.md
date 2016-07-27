@@ -18,11 +18,11 @@ All files are located in *Products/USG*
 - upnp_config.gateway.json
   - _Enable UPnP / NAT-PMP on the USG_ - **Working**
 - dnscache_config.gateway.json
-  - _Increase DNS Cache size_ - **Testing**
+  - _Increase DNS Cache size_ - **Not Working** - Ubiquiti said this is a known issue. Another process overwrites the DNS cache and host entries settings. Supposedly this will be fixed somtime soon.
 - static_dns_entry_config.gateway.json 
-  - _Create static entries in the DNS server_ - **Testing**
+  - _Create static entries in the DNS server_ - **Not Working** - Same reason as above file. There's a workaround using the static host commands that I _think_ is working. In testing...
 - dnsdomainname_config.gateway.json 
-  - _Set domain name properly_ - **Testing**
+  - _Set domain name properly_ - **Working**
 - combined_config.gateway.json
   - _Combination of several files, to illustrate how it works_ -**Testing**
 
