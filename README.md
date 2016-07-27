@@ -18,11 +18,11 @@ All files are located in *Products/USG*
 - upnp_config.gateway.json
   - _Enable UPnP / NAT-PMP on the USG_ - **Working**
 - dnscache_config.gateway.json
-  - Increase DNS Cache size - **Testing**
+  - _Increase DNS Cache size_ - **Testing**
 - static_dns_entry_config.gateway.json 
-  - Create static entries in the DNS server - **Testing**
+  - _Create static entries in the DNS server_ - **Testing**
 - dnsdomainname_config.gateway.json 
-  - Set domain name properly - **Testing**
+  - _Set domain name properly_ - **Testing**
 
 ### Reference Documentation
 
