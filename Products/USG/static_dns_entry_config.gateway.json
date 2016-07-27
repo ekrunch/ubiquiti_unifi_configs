@@ -1,0 +1,9 @@
+{
+    "service": {
+        "dns": {
+            "forwarding": {
+                "options": "host-record=unifi,172.16.31.250"
+            }
+        }
+    }
+}

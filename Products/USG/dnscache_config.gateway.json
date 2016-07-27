@@ -1,0 +1,9 @@
+{
+    "service": {
+        "dns": {
+            "forwarding": {
+                "cache-size": 5000
+            }
+        }
+    }
+}
