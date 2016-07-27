@@ -7,7 +7,7 @@ These documents are samples for various Ubiquiti Unifi products. I've created th
 
 For USG, the JSON files are placed in the site data directory of the controller. On the Unifi Cloud Key controller, the directory is usually **/usr/lib/unifi/data/sites/default**
 
-The file must always be called **config.gateway.json** and there is only one file. Multiple JSON files have to be combined in order to use more than one configuration snippet.
+The file must always be called **config.gateway.json** and there is only one file allowed. Multiple JSON files have to be combined in order to use more than one configuration snippet. There is a "combined" sample in the repository that covers what it could look like with multiple services edited.
 
 _NOTE_ : If the config.gateway.json file has errors, the USG could go into a reboot loop. If that happens, fix the JSON file and restart the controller. When the USG reboots, it should be fine.
 
@@ -23,6 +23,8 @@ All files are located in *Products/USG*
   - _Create static entries in the DNS server_ - **Testing**
 - dnsdomainname_config.gateway.json 
   - _Set domain name properly_ - **Testing**
+- combined_config.gateway.json
+  - _Combination of several files, to illustrate how it works_ -**Testing**
 
 ### Reference Documentation
 
