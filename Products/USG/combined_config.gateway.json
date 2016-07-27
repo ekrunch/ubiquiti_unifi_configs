@@ -1,23 +1,57 @@
 {
-	"service": {
-		"domain-name": "internal.mynetwork.com",
-		"dns": {
-			"forwarding": {
-				"cache-size": 1000,
-				"options": [
-					"host-record=jarvis,172.30.31.1",
-					"host-record=happy,172.30.31.2",
-					"host-record=pepper,172.30.31.3"
-				]
-			}
-		},
-		"upnp2": {
-			"listen-on": [
-				"eth1"
-			],
-			"nat-pmp": "enable",
-			"secure-mode": "enable",
-			"wan": "eth0"
-		}
-	}
+    "service": {
+        "dns": {
+            "forwarding": {
+                "cache-size": 1000
+            }
+        },
+        "upnp2": {
+            "listen-on": [
+                "eth1"
+            ],
+            "nat-pmp": "enable",
+            "secure-mode": "enable",
+            "wan": "eth0"
+        }
+    },
+    "system": {
+        "domain-name": "internal.yourdomain.com",
+        "ntp": {
+            "server": {
+                "0.ubnt.pool.ntp.org": "''",
+                "1.ubnt.pool.ntp.org": "''",
+                "2.ubnt.pool.ntp.org": "''",
+                "3.ubnt.pool.ntp.org": "''"
+            }
+        },
+        "static-host-mapping": {
+            "host-name": {
+                "happy.internal.yourdomain.com": {
+                    "alias": [
+                        "happy"
+                    ],
+                    "inet": [
+                        "172.16.31.1"
+                    ]
+                },
+                "jarvis.internal.yourdomain.com": {
+                    "alias": [
+                        "jarvis"
+                    ],
+                    "inet": [
+                        "172.16.31.2"
+                    ]
+                },
+                "pepper.internal.yourdomain.com": {
+                    "alias": [
+                        "pepper"
+                    ],
+                    "inet": [
+                        "172.16.31.3"
+                    ]
+                }
+            }
+        }
+    }
 }
+
