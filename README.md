@@ -22,15 +22,15 @@ All files are located in *Products/USG*
 
 - [upnp_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/upnp_config.gateway.json)
   - _Enable UPnP / NAT-PMP on the USG_ - **Working**
-- dnscache_config.gateway.json
+- [dnscache_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/dnscache_config.gateway.json)
   - _Increase DNS Cache size_ - **Working** - _Requires USG 4.3.17 / Controller 5.1.1_ 
-- static_dns_entry_config.gateway.json 
+- [static_dns_entry_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/static_dns_entry_config.gateway.json) 
   - _Create static entries in the DNS server_ - **Testing** - Recent fixes in this area that could solve the problem.
-- dnsdomainname_config.gateway.json 
+- [dnsdomainname_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/dnsdomainname_config.gateway.json)
   - _Set domain name properly_ - **Working**
-- ntp_config.gateway.json
+- [ntp_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/ntp_config.gateway.json)
   - _Set NTP Servers_ - **Working**
-- combined_config.gateway.json
+- [combined_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/combined_config.gateway.json)
   - _Combination of several files, to illustrate how it works_ - **Working** - _Requires USG 4.3.17 / Controller 5.1.1_
 
 ### Reference Documentation
