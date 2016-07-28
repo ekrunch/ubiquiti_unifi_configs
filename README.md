@@ -11,20 +11,27 @@ The file must always be called **config.gateway.json** and there is only one fil
 
 _NOTE_ : If the config.gateway.json file has errors, the USG could go into a reboot loop. If that happens, fix the JSON file and restart the controller. When the USG reboots, it should be fine.
 
+### Current Versions
+All tests listed below were performed on the following firmware
+USG : v4.3.17 (Currently beta as of 2016/07/27)
+Controller : 5.1.1 (Currently beta as of 2016/07/27)
+
 ### Documents
 
 All files are located in *Products/USG*
 
-- upnp_config.gateway.json
+- [upnp_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/upnp_config.gateway.json)
   - _Enable UPnP / NAT-PMP on the USG_ - **Working**
 - dnscache_config.gateway.json
-  - _Increase DNS Cache size_ - **Not Working** - Known issue. Another process overwrites the DNS cache and host entries settings. Supposedly this will be fixed somtime soon. <https://community.ubnt.com/t5/UniFi-Routing-Switching/Modify-USG-dns-forwarding-options-with-JSON/td-p/1196439>
+  - _Increase DNS Cache size_ - **Working** - _Requires USG 4.3.17 / Controller 5.1.1_ 
 - static_dns_entry_config.gateway.json 
-  - _Create static entries in the DNS server_ - **Not Working** - Same reason as above file. There's a workaround using the static host commands that I _think_ is working. In testing...
+  - _Create static entries in the DNS server_ - **Testing** - Recent fixes in this area that could solve the problem.
 - dnsdomainname_config.gateway.json 
   - _Set domain name properly_ - **Working**
+- ntp_config.gateway.json
+  - _Set NTP Servers_ - **Working**
 - combined_config.gateway.json
-  - _Combination of several files, to illustrate how it works_ - **Testing** - UPnP Working, DNS not, Domain Working, NTP Working
+  - _Combination of several files, to illustrate how it works_ - **Working** - _Requires USG 4.3.17 / Controller 5.1.1_
 
 ### Reference Documentation
 

@@ -1,8 +1,11 @@
 {
-    "service": {
-        "dns": {
-            "forwarding": {
-                "options": "host-record=unifi,172.16.31.250"
+    "system": {
+        "ntp": {
+            "server": {
+                "0.ubnt.pool.ntp.org": "''",
+                "1.ubnt.pool.ntp.org": "''",
+                "2.ubnt.pool.ntp.org": "''",
+                "3.ubnt.pool.ntp.org": "''"
             }
         }
     }
