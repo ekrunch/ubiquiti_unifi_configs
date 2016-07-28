@@ -35,7 +35,7 @@ All files are located in *Products/USG*
 
 ### Reference Documentation
 
-- The USG is built on Ubiquiti's EdgeOS, which is based on Vyatta Core. To the best of my knowledge, it was forked from Vyatta Core 6.3, so I have put up the Vyatta 6.3 documentation as well. 
+- The USG is built on Ubiquiti's EdgeOS, which is based on Vyatta Core. To the best of my knowledge, it was forked from Vyatta Core 6.3, so I have put up the [Vyatta 6.3 documentation](https://github.com/ekrunch/ubiquiti_unifi_configs/tree/master/Reference%20Documentation/Vyatta/6.3) as well. 
 
 ### Additional Links
 
