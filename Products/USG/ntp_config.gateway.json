@@ -1,6 +1,5 @@
 {
-	    "system": {
-        "domain-name": "internal.unixwarhammer.com",
+    "system": {
         "ntp": {
             "server": {
                 "0.ubnt.pool.ntp.org": "''",
@@ -8,33 +7,6 @@
                 "2.ubnt.pool.ntp.org": "''",
                 "3.ubnt.pool.ntp.org": "''"
             }
-        },
-        "static-host-mapping": {
-            "host-name": {
-                "happy.internal.unixwarhammer.com": {
-                    "alias": [
-                        "happy"
-                    ],
-                    "inet": [
-                        "172.16.31.80"
-                    ]
-                },
-                "jarvis.internal.unixwarhammer.com": {
-                    "alias": [
-                        "jarvis"
-                    ],
-                    "inet": [
-                        "172.16.31.75"
-                    ]
-                },
-                "pepper.internal.unixwarhammer.com": {
-                    "alias": [
-                        "pepper"
-                    ],
-                    "inet": [
-                        "172.16.31.81"
-                    ]
-                }
-            }
         }
+    }
 }
