@@ -30,3 +30,10 @@ All files are located in *Products/USG*
 
 - The USG is built on Ubiquiti's EdgeOS, which is based on Vyatta Core. To the best of my knowledge, it was forked from Vyatta Core 6.3, so I have put up the Vyatta 6.3 documentation as well. 
 
+### Additional Links
+
+- Unifi controller config.properties file (Affects all Unifi components attached to the controller)
+  - <https://help.ubnt.com/hc/en-us/articles/205146040-UniFi-config-properties-File-Explanation>
+- More discussion around the config.gateway.json file (Affects USG devices attached to the controller)
+  - <https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-How-to-further-customize-USG-configuration-with-config-gateway-json>
+
