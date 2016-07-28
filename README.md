@@ -18,13 +18,13 @@ All files are located in *Products/USG*
 - upnp_config.gateway.json
   - _Enable UPnP / NAT-PMP on the USG_ - **Working**
 - dnscache_config.gateway.json
-  - _Increase DNS Cache size_ - **Not Working** - Ubiquiti said this is a known issue. Another process overwrites the DNS cache and host entries settings. Supposedly this will be fixed somtime soon.
+  - _Increase DNS Cache size_ - **Not Working** - Known issue. Another process overwrites the DNS cache and host entries settings. Supposedly this will be fixed somtime soon. <https://community.ubnt.com/t5/UniFi-Routing-Switching/Modify-USG-dns-forwarding-options-with-JSON/td-p/1196439>
 - static_dns_entry_config.gateway.json 
   - _Create static entries in the DNS server_ - **Not Working** - Same reason as above file. There's a workaround using the static host commands that I _think_ is working. In testing...
 - dnsdomainname_config.gateway.json 
   - _Set domain name properly_ - **Working**
 - combined_config.gateway.json
-  - _Combination of several files, to illustrate how it works_ -**Testing**
+  - _Combination of several files, to illustrate how it works_ - **Testing** - UPnP Working, DNS not, Domain Working, NTP Working
 
 ### Reference Documentation
 
