@@ -1,6 +1,6 @@
 ## USG Samples
 
-For USG, the JSON files are placed in the site data directory of the controller. On the Unifi Cloud Key controller, the directory is usually **/usr/lib/unifi/data/sites/default**
+For the USG, the JSON files are placed in the site data directory of the controller. On the Unifi Cloud Key controller, the directory is usually **/usr/lib/unifi/data/sites/default**
 
 The file must always be called **config.gateway.json** and there is only one file allowed. Multiple JSON files have to be combined in order to use more than one configuration snippet. There is a "combined" sample in the repository that covers what it could look like with multiple services edited.
 
@@ -8,7 +8,9 @@ _NOTE_ : If the config.gateway.json file has errors, the USG could go into a reb
 
 ### Current Versions
 All tests listed below were performed on the following firmware
+
 USG : v4.3.17 (Currently beta as of 2016/07/27)
+
 Controller : 5.1.1 (Currently beta as of 2016/07/27)
 
 ### Documents
