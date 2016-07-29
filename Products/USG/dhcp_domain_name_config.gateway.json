@@ -1,0 +1,15 @@
+{
+    "service": {
+        "dhcp-server": {
+            "shared-network-name": {
+                "LAN_172.16.31.0-24": {
+                    "subnet": {
+                        "172.16.31.0/24": {
+                            "domain-name": "internal.yourdomain.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
