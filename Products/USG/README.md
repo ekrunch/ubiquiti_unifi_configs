@@ -10,7 +10,6 @@ _NOTE_ : If the config.gateway.json file has errors, the USG could go into a reb
 All tests listed below were performed on the following firmware
 
 USG : v4.3.17 (Currently beta as of 2016/07/27)
-
 Controller : 5.1.1 (Currently beta as of 2016/07/27)
 
 ### Documents
