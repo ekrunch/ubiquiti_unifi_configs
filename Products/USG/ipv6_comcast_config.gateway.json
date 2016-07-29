@@ -1,0 +1,115 @@
+{
+        "firewall": {
+                "ipv6-name": {
+                        "WANv6_IN": {
+                                "default-action": "drop",
+                                "description": "WAN inbound traffic forwarded to LAN",
+                                "enable-default-log": "''",
+                                "rule": {
+                                        "10": {
+                                                "action": "accept",
+                                                "description": "Allow established/related sessions",
+                                                "state": {
+                                                        "established": "enable",
+                                                        "invalid": "disable",
+                                                        "new": "disable",
+                                                        "related": "enable"
+                                                }
+                                        },
+                                        "20": {
+                                                "action": "drop",
+                                                "description": "Drop invalid state",
+                                                "state": {
+                                                        "established": "disable",
+                                                        "invalid": "enable",
+                                                        "new": "disable",
+                                                        "related": "disable"
+                                                }
+                                        }
+                                }
+                        },
+                        "WANv6_LOCAL": {
+                                "default-action": "drop",
+                                "description": "WAN inbound traffic to the router",
+                                "enable-default-log": "''",
+                                "rule": {
+                                        "10": {
+                                                "action": "accept",
+                                                "description": "Allow established/related sessions",
+                                                "state": {
+                                                        "established": "enable",
+                                                        "related": "enable"
+                                                }
+                                        },
+                                        "20": {
+                                                "action": "drop",
+                                                "description": "Drop invalid state",
+                                                "state": {
+                                                        "invalid": "enable"
+                                                }
+                                        },
+                                        "30": {
+                                                "action": "accept",
+                                                "description": "Allow IPv6 icmp",
+                                                "protocol": "ipv6-icmp"
+                                        },
+                                        "40": {
+                                                "action": "accept",
+                                                "description": "allow dhcpv6",
+                                                "destination": {
+                                                        "port": "546"
+                                                },
+                                                "protocol": "udp",
+                                                "source": {
+                                                        "port": "547"
+                                                }
+                                        }
+                                }
+                        }
+                },
+                "ipv6-receive-redirects": "disable",
+                "ipv6-src-route": "disable"
+        },
+        "interfaces": {
+                "ethernet": {
+                        "eth0": {
+                                "dhcpv6-pd": {
+                                        "pd": {
+                                                "0": {
+                                                        "interface": {
+                                                                "eth1": {
+                                                                        "host-address": "::1",
+                                                                        "prefix-id": ":1",
+                                                                        "service": "slaac"
+                                                                }
+                                                        },
+                                                        "prefix-length": "/60"
+                                                }
+                                        },
+                                        "rapid-commit": "enable"
+                                },
+                                "firewall": {
+                                        "in": {
+                                                "ipv6-name": "WANv6_IN"
+                                        },
+                                        "local": {
+                                                "ipv6-name": "WANv6_LOCAL"
+                                        }
+                                },
+                                "ipv6": {
+                                        "dup-addr-detect-transmits": "1",
+                                        "router-advert": {
+                                                "cur-hop-limit": "64",
+                                                "link-mtu": "0",
+                                                "managed-flag": "true",
+                                                "max-interval": "600",
+                                                "other-config-flag": "false",
+                                                "reachable-time": "0",
+                                                "retrans-timer": "0",
+                                                "send-advert": "true"
+                                        }
+                                }
+                        }
+                }
+        }
+}
