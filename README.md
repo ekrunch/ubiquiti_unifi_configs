@@ -5,7 +5,7 @@ These documents are samples for various Ubiquiti Unifi products. I've created th
 
 ## Products
 
-- Ubiquiti Universal Security Gateway %28USG%29 - [Sample Files](https://github.com/ekrunch/ubiquiti_unifi_configs/tree/master/Products/USG)
+- Ubiquiti Universal Security Gateway \(USG\) - [Sample Files](https://github.com/ekrunch/ubiquiti_unifi_configs/tree/master/Products/USG)
 
 ## USG Samples
 
