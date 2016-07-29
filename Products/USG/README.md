@@ -4,7 +4,7 @@ For USG, the JSON files are placed in the site data directory of the controller.
 
 The file must always be called **config.gateway.json** and there is only one file allowed. Multiple JSON files have to be combined in order to use more than one configuration snippet. There is a "combined" sample in the repository that covers what it could look like with multiple services edited.
 
-_NOTE_ : If the config.gateway.json file has errors, the USG could go into a reboot loop. If that happens, fix the JSON file and restart the controller. When the USG reboots, it should be fine.
+_NOTE_ : If the config.gateway.json file has errors, the USG could go into a reboot loop. If that happens, fix the JSON file and restart the controller. When the USG reboots, it should be fine. I highly recommend the use of a JSON validator before applying to your gateway. Search for **JSON Validator** or **JSON Lint** to find one. Using a text editor with syntax highlighting helps a lot as well.
 
 ### Current Versions
 All tests listed below were performed on the following firmware
@@ -13,18 +13,17 @@ Controller : 5.1.1 (Currently beta as of 2016/07/27)
 
 ### Documents
 
-- [upnp_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/upnp_config.gateway.json)
-  - _Enable UPnP / NAT-PMP on the USG_ - **Working**
-- [dnscache_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/dnscache_config.gateway.json)
-  - _Increase DNS Cache size_ - **Working** - _Requires USG 4.3.17 / Controller 5.1.1_ 
-- [static_dns_entry_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/static_dns_entry_config.gateway.json) 
-  - _Create static entries in the DNS server_ - **Testing** - Recent fixes in this area that could solve the problem.
-- [dnsdomainname_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/dnsdomainname_config.gateway.json)
-  - _Set domain name properly_ - **Working**
-- [ntp_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/ntp_config.gateway.json)
-  - _Set NTP Servers_ - **Working**
-- [combined_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/combined_config.gateway.json)
-  - _Combination of several files, to illustrate how it works_ - **Working** - _Requires USG 4.3.17 / Controller 5.1.1_
+| Filename | Description | Status | Notes |
+| :------- | :---------- | :----: | :---- |
+| combined_config.gateway.json | Combination of several files, to illustrate how it works | **Working** ||
+| dhcp_domain_name_config.gateway.json | Combination of several files, to illustrate how it works | **Working** ||
+| dnscache_config.gateway.json | Increase DNS Cache size | **Working** | Requires USG 4.3.17 / Controller 5.1.1 |
+| dnsdomainname_config.gateway.json | Set USG domain name properly | **Working** ||
+| ipv6_comcast_config.gateway.json | Experimental IPv6 Configuration for use in residental setups. Currently uses DHCPv6-PD and works with Comcast | **Testing** ||
+| ntp_config.gateway.json	| Set NTP Servers | **Working** ||
+| ssh_key_config.gateway.json |	Set SSH Key for logging in without a password | **Testing** | It is highly recommended that you use the "loadkey" command from the USG and then view the resulting configuration to understand the structure here. This one isn't something you'll want to type in manually. |
+| static_dns_entry_config.gateway.json | Create static entries in the DNS server | **Testing** | Recent fixes in this area that could solve the problem. |
+| upnp_config.gateway.json | Enable UPnP / NAT-PMP on the USG | **Working** ||
 
 ### Reference Documentation
 
