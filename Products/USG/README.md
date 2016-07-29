@@ -13,8 +13,6 @@ Controller : 5.1.1 (Currently beta as of 2016/07/27)
 
 ### Documents
 
-All files are located in *Products/USG*
-
 - [upnp_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/upnp_config.gateway.json)
   - _Enable UPnP / NAT-PMP on the USG_ - **Working**
 - [dnscache_config.gateway.json](https://github.com/ekrunch/ubiquiti_unifi_configs/blob/master/Products/USG/dnscache_config.gateway.json)
