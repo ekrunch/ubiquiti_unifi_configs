@@ -7,14 +7,6 @@ These documents are samples for various Ubiquiti Unifi products. I've created th
 
 - Ubiquiti Universal Security Gateway \(USG\) - [Sample Files](https://github.com/ekrunch/ubiquiti_unifi_configs/tree/master/Products/USG)
 
-## USG Samples
-
-For USG, the JSON files are placed in the site data directory of the controller. On the Unifi Cloud Key controller, the directory is usually **/usr/lib/unifi/data/sites/default**
-
-The file must always be called **config.gateway.json** and there is only one file allowed. Multiple JSON files have to be combined in order to use more than one configuration snippet. There is a "combined" sample in the repository that covers what it could look like with multiple services edited.
-
-_NOTE_ : If the config.gateway.json file has errors, the USG could go into a reboot loop. If that happens, fix the JSON file and restart the controller. When the USG reboots, it should be fine.
-
 ### Additional Links
 
 - Unifi controller config.properties file (Affects all Unifi components attached to the controller)
