@@ -24,8 +24,8 @@ Controller : 5.1.1 (Currently beta as of 2016/07/27)
 | dnsdomainname_config.gateway.json | Set USG domain name properly | **Working** ||
 | ipv6_comcast_config.gateway.json | Experimental IPv6 Configuration for use in residental setups. Currently uses DHCPv6-PD and works with Comcast | **Working** | Tested on USG 4.3.20 / Controller 5.2.0 - I've noticed that after the first provisioning with this configuration, a reboot might be required to make everything work correctly. If you can't ping anything on the Internet via IPv6, reboot the USG and it should work. |
 | ntp_config.gateway.json	| Set NTP Servers | **Working** ||
-| ssh_key_config.gateway.json |	Set SSH Key for logging in without a password | **Testing** | It is highly recommended that you use the "loadkey" command from the USG and then view the resulting configuration to understand the structure here. This one isn't something you'll want to type in manually. |
-| static_dns_entry_config.gateway.json | Create static entries in the DNS server | **Testing** | Recent fixes in this area that could solve the problem. |
+| ssh_key_config.gateway.json |	Set SSH Key for logging in without a password | **Working** | Tested on USG 4.3.20 / Controller 5.2.0 - It is highly recommended that you use the "loadkey" command from the USG and then view the resulting configuration to understand the structure here. This one isn't something you'll want to type in manually. |
+| static_dns_entry_config.gateway.json | Create static entries in the DNS server | **Working** | Tested on USG 4.3.20 / Controller 5.2.0 - I still think there's a better way to do this with the DNS Server configuration directly, but this works fine. |
 | upnp_config.gateway.json | Enable UPnP / NAT-PMP on the USG | **Working** ||
 
 ### Reference Documentation
